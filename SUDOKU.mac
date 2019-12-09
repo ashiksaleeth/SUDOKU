@@ -156,6 +156,7 @@ bx   write:col#3=1 tBRED quit
 
 #; generate available values
 opt()
+    if box(row,col) quit "    X    "
     set free=""
 	 	,grp=box(row,col,1)
     for int=1:1:9 set free=free_$s($$check(int):int,1:".") 
