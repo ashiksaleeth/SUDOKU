@@ -3,7 +3,7 @@ A demo in traditional style COS
 
 This was written based on a previous trial in .XLS  
 It is far from being perfect. Rather a challenge for   
-improvment in all directions (code, interface, ...)  
+improvement in all directions (code, interface, ...)  
 So anyone feel invited to make it better.  
    
 USER>d ^SUDOKU  
