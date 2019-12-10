@@ -146,7 +146,6 @@ show
         for col=1:1:9 { do box0 }  write tBRED,"|",!
         for col=1:1:9 { do box1 }  write tBRED,"|",!
         for col=1:1:9 { do box2 }  write tBRED,"|",!
- ;       for col=1:1:9 { do box3 }  write tBRED,"|",!
         do lin
     }
     quit
@@ -155,7 +154,6 @@ show
 box0 do opt(),bx write "|",tNORM,"  ",tREVS,box(row,col),tNORM,"  " quit 
 box1 do bx write "|",tNORM,$e(free,1,5) quit   
 box2 do bx write "|",tNORM,$e(free,6,10) quit   
- ; box3 do bx write "|",tNORM,$e(free,7,9) quit 
 bx  write:col#3=1 tBRED
     set free=$s(box(row,col):$j("",10),1: box(row,col,2)_"*")
     quit 
@@ -210,7 +208,7 @@ solver
 #; the group of the box then fill it in
 unique
 #; check rows first
-   for row=1:1:0 {
+   for row=1:1:9 {
        kill found
        set aval=box("R",row)
        for int=1:1:9 {
@@ -220,7 +218,7 @@ unique
         if $d(found)>9 do unicom return
      }
  #; check cols next
-   for col=1:1:0 {
+   for col=1:1:9 {
        kill found
        set aval=box("C",col)
        for int=1:1:9 {
