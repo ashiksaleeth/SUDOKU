@@ -197,11 +197,11 @@ solver
             for col=1:1:9 {
                 if ($e(box(row,col))=" ") {
                     set int=$tr($$opt,".")
-                    if int="" do message() return
                     if $l(int)=1 {
                         if $$valid(1),$i(find)    
                         if $g(%step) write tCSI,"C*" read x#1
                        }
+                    if int="" do message() return                       
                     }
                 }
             }
