@@ -13,7 +13,7 @@ Esto se refiere a la última actualización ya (SUDOKU5.mac)
      ;; , para detener  
      ;; * iniciar el solucionador  
      ;; x eXport estado real a csv_file (0 = terminal)  
-     ;; Importo el estado de csv_file (0 = terminal)  
+     ;; i importo el estado de csv_file (0 = terminal)  
      ;; ^ escribir instantánea en el cuadro global ^  
      ;; ! cargar instantánea desde el cuadro global ^  
      ;;  
