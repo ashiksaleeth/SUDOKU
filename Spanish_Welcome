@@ -1,0 +1,22 @@
+Esto se refiere a la última actualización ya (SUDOKU5.mac) 
+  
+     ;; ¡Bienvenido a esta demostración de SUDOKU!  
+     ;; puedes resolver tu SUDOKU más fácilmente o crear el tuyo propio  
+     ;; debajo de cada entrada de cuadro encontrará una lista  
+     ;; de valores permitidos para este cuadro  
+     ;; complete los números 1..9 según lo necesite  
+     ;; para borrar un cuadro ingrese cualquier caracter o espacio en blanco  
+     ;;  
+     ;; navegar entre las cajas con las teclas del cursor <> ^ v  
+     ;; comandos de administración simples:  
+     ;; . para detener  
+     ;; , para detener  
+     ;; * iniciar el solucionador  
+     ;; x eXport estado real a csv_file (0 = terminal)  
+     ;; Importo el estado de csv_file (0 = terminal)  
+     ;; ^ escribir instantánea en el cuadro global ^  
+     ;; ! cargar instantánea desde el cuadro global ^  
+     ;;  
+     ;; Para una mejor visualización, necesita un terminal configurado a 48x80  
+     ;;  
+Vamos:  
