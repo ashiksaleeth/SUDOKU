@@ -83,18 +83,27 @@ input
         }
     }
     quit  
-A   if row>1,$i(row,-1)
-    else  set row=9
+A   quit:$$F()
+    if row>1,$i(row,-1)
+    else  set row=9 do D
     quit
-B   if row<9,$i(row) 
-    else  set row=1
+B   quit:$$E()
+    if row<9,$i(row) 
+    else  set row=1 do C
     quit
-C   if col<9,$i(col)
-    else  set col=1
+C   quit:$$E()
+    if (col=9),(row=9) set (row,col)=1 quit
+    if col<9,$i(col)
+    else  set col=1 do B
     quit
-D   if col>1,$i(col,-1)
-    else  set col=9
+D   quit:$$F()
+    if col>1,$i(col,-1)
+    else  set col=9 do A
     quit
+E() if (col=9),(row=9) set (row,col)=1
+    quit $test
+F() if (col=1),(row=1) set (row,col)=9
+    quit $test
  
 #; check for valid entry or forget it
 valid(quick = 0 ) 
